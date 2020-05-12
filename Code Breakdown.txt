@@ -1,0 +1,40 @@
+Here is a few examples of my work , and below youll find kind of a breakdown for each file and why it was included
+
+
+
+
+
+
+Create_Customer_Objects . rb :
+
+This was a rewrite that I wish I had taken the time to do properly the first time . I shaved down the number of files in migration and grouped the records based on their model affiliations and a few other factors , to me it just felt easier to read and easier to amend . A few years back we moved from Access to SQL and I rewrote the migration files to be more inclusive , this is an example of one of those migrations that s admittedly a lot more organized than the first migrations I wrote .
+
+
+
+
+
+
+Customers_Spec . rb :
+
+Unit testing . I believe it is one of the biggest tools at our disposal ( next to Debugger ) to diagnose issues within a Ruby system and make sure your model affiliations are working as well as a tool to test new functionality added to the system after the fact . I love writing unit tests and my preferred method of writing these tests is with RSpec , though at Red 5 Studios I did dabble around with Jenkins as well .
+
+
+
+
+
+
+OrdersService . js :
+
+I dabbled around with the Services functionality of AngularJS when I first started implementing it into our system , I really liked the idea of essentially storing important data needed across multiple controllers in one easy place . The end result ended up being a little redundant , with some calls getting made in the serve AND in the controller when loading an admin page . This presented a few problems , but I count it as a really fun and interesting learning experience into AngularJS and have since fell in love with it . This also kind of shows my first eager attempts at splitting the admin system by location , and separating the UK and US sides of the business . Implementations where it is split like this I ended up not being a huge fan of as I feel like nowadays there are much better practices for this kind of thing , but under the gun I tried to make it as clean and readable as possible .
+
+
+
+CustomersConroller . js :
+
+This is one of my more complex Javascript controllers which may hurt me because its also probably one of my messier ones , but I thought it would be important to show kind of both sides of the coin , where we can kind see the progression as I learned more about the platforms and how to best utilize them . The view pages for this controller was written in . html . erb
+
+
+
+Reports API and Admin Controller :
+
+I grouped these because I just really wanted to show off the reporting and statistical side of things as well as the use of roles to kind of separate the reports that get shown based on who is logged in and looking at them . My math game is a little weak , but I really wanted to submit some code that shows the grouping of sections of data to be output into a viewable report because I love playing with large data sets so much and I think you can learn a lot about your business and your website design / flow through good reporting . The output view pages for this were written in . haml
